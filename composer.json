@@ -1,0 +1,26 @@
+{
+    "name": "phoenixrvd/test-drive",
+    "type": "project",
+    "description": "An automation tool that allows to formalize the manual testing of web applications.",
+    "authors": [
+        {
+            "name": "viacheslav Wolf",
+            "email": "phoenixrvd@yahoo.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "symfony/console": "5.x-dev",
+        "php-webdriver/webdriver": "^1.10",
+        "symfony/dotenv": "5.x-dev",
+        "symfony/yaml": "5.x-dev"
+    },
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "PhoenixRVD\\TestDrive\\": "src"
+        }
+    },
+    "bin": ["bin/test-drive"]
+}

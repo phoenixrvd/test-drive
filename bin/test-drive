@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+$envFile = __DIR__ . '/../.env';
+if (file_exists($envFile)) {
+    (new Symfony\Component\Dotenv\Dotenv())->load($envFile);
+}
+
+$app = new Application('TestDrive', '1.0.0');
+
+$commands = [
+    \PhoenixRVD\TestDrive\Command\Visual::class,
+    \PhoenixRVD\TestDrive\Command\Automatic::class,
+];
+
+foreach ($commands as $command) {
+    $cm = new $command;
+    $app->add($cm);
+}
+
+$app->run();

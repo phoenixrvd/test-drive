@@ -1,0 +1,20 @@
+td:
+  - command: 'td:visual'
+    args:
+      url: 'https://example.com'
+    options:
+      --no-chrome: true
+      --no-firefox: true
+      --no-mobile: true
+      --no-generals: true
+      --mobile:
+        - 'iPhone X'
+        - 'iPad'
+
+  - command: 'td:visual'
+    args:
+      url: 'https://example.com'
+    options:
+      --no-firefox: true
+      --no-generals: true
+      --no-mobile: true

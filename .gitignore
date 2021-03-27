@@ -1,0 +1,5 @@
+.idea
+vendor
+screenshots
+composer.lock
+.env
