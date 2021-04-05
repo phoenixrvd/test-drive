@@ -1,5 +1,10 @@
 # Test drive
 
+[![Minimum PHP Version](https://img.shields.io/packagist/php-v/phoenixrvd/test-drive)](https://php.net/)
+[![Latest Stable Version](https://poser.pugx.org/phoenixrvd/test-drive/v/stable.svg)](https://packagist.org/packages/phoenixrvd/test-drive)
+[![composer.lock](https://poser.pugx.org/phoenixrvd/test-drive/composerlock)](https://packagist.org/packages/phoenixrvd/test-drive)
+[![License](https://poser.pugx.org/phoenixrvd/test-drive/license)](https://packagist.org/packages/phoenixrvd/test-drive)
+
 An automation tool that allows to formalize the manual testing of web applications.
 
 ## Installation
