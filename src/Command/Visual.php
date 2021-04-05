@@ -95,6 +95,7 @@ class Visual extends Command
         }
 
         if (!$input->getOption('no-generals')) {
+            $output->writeln('');
             while ('' !== ($error = $cliHelper->askForErrors())) {
                 $tetResults->addGeneralError($error);
             }
